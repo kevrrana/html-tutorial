@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulama 3</title>
+</head>
+<body>
+    <h1>Form Uygulama Örneği 3</h1>
+
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+
+      <label for="adiniz">Adınız:</label>
+      <input type="text" name="adiniz" id="adiniz" placeholder="Adınızı Girin" required maxlength="20" size="20" autocomplete="off"><br><br>
+
+      <label for="soyadiniz">Soyadınız:</label>
+      <input type="text" name="soyadiniz" id="soyadiniz" placeholder="Soyadınızı Giriniz" required ><br><br>
+
+      <label for="dogum-tarihiniz">Doğum Tarihiniz:</label>
+      <input type="date" name="dogum-tarihiniz" id="dogum-tarihiniz" value="2008-03-20" min="2000-01-01" max="2024-01-01"><br><br>
+
+      <label for="sifreniz">Şifreniz:</label>
+      <input type="password" name="sifreniz" id="sifreniz" minlength="8" maxlength="16" required><br><br>
+
+      <label for="maasiniz">Maaş:</label>
+      <input type="number" name="maasiniz" id="maasiniz"  min="5000" max="100000" step="500"><br><br>
+
+      <label for="epostaniz">E-postanız:</label>
+      <input type="email" name="epostaniz" id="epostaniz" placeholder="kisi@eposta.com" autocomplete="on"><br><br>
+
+      <label for="hobiniz">Hobiniz:</label>
+      <input type="text" name="hobiniz" id="hobiniz" list="hobiler"><br><br>
+      <datalist id="hobiler">
+        <option value="Uyumak">
+        <option value="Uyuklamak">
+        <option value="Kitao okumak">
+        <option value="Müzük dinlemek"> 
+        <option value="Film izlemek"> 
+        
+      </datalist> 
+
+      <label for="kullaniciadiniz">Kullanıcı Adınız:</label>
+      <input type="text" name="kullaniciadiniz" id="kullaniciadiniz"><br><br>
+
+      <label for="kredinotu">Kredi Notu:</label>
+      <input type="text" name="kredinotu" id="kredinotu" disabled value="70"><br><br>
+
+      <label for="ozgecmisdosya">Öz Geçmiş:</label>
+      <input type="text" name="ozgecmisdosya" id="ozgecmisdosya"><br><br>
+
+      <button type="submit">Bilgileri Kaydet</button>
+      <button type="reset">Bilgileri Temizle</button>
+      
+    </form>
+</body>
+</html>
