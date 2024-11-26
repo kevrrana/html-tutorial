@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Oluşturma</title>
+</head>
+<body>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+
+    <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+
+        <label for="sad">Ad-Soyad</label>
+        <input type="text" name="sad" id="sad"><br><br>
+
+        <label for="dtarih">Doğum Tarihi</label>
+        <input type="date" name="dtarih" id="dtarih" value="2000-01-01"><br><br>
+
+        <label for="maas">Maaş Beklentiniz</label>
+        <input type="number" name="maas" id="maas" min="20000" max="60000" step="1000"><br><br>
+
+        <label for="sevders">En Sevdiğiniz Ders</label>
+        <input type="text" name="sevders" id="sevders" list="dersler"><br><br>
+        <datalist id="dersler">
+            <option value="Yapay Zeka">
+            <option value="Robotik Kodlama">
+            <option value="Web Tabanlı Uygulama">
+            <option value="Grafik Canlandırma"> 
+            <option value="Mobil Uygulama"> 
+
+        </datalist>
+
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Üyelik Bilgileri</legend>
+
+        <label for="kulaniciadi">Kulanıcı Adınız</label>
+        <input type="text" name="kulaniciadi" id="kulaniciadi"  maxlength="5"  pattern="[A-Za-z]+"><br><br>
+
+        <label for="epostaniz">E-postanız</label>
+        <input type="email" name="epostaniz" id="epostaniz" placeholder="kisi@eposta.com" autocomplete="on"><br><br>
+
+        <label for="sifreniz">Şifreniz</label>
+        <input type="password" name="sifreniz" id="sifreniz" minlength="8" maxlength="16" ><br><br>
+
+        <label for="uyelikesozlesmesi">Üyelk Sözleşmesi</label>
+    <textarea name="uyelikesozlesmesi" id="uyelikesozlesmesi" cols="30" rows="5" placeholder="Yazınızı Buraya Yazınız....."></textarea>
+    </fieldset><br><br>
+
+    <button type="submit">Bilgileri Kaydet</button>
+    <button type="reset">Bilgileri Temizle</button>
+
+
+</body>
+</html>
