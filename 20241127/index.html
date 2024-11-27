@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quez</title>
+</head>
+<body>
+
+    <h1>DORY</h1>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+
+        <fieldset>
+            <legend>DORY</legend>
+
+            <label for="guvenlikanahtari">Güvenlik Anahtarı</label><br>
+            <input type="text" name="guvenlikanahtari" id="guvenlikanahtari" disabled value="02893473645345454137"><br><br>
+
+            <label for="eposta">E-posta</label><br>
+            <input type="email" name="eposta" id="eposta" placeholder="kisi@eposta.com" autocomplete="on"><br><br>
+
+            <label for="dtarih">Doğum Tarihi</label><br>
+            <input type="date" name="dtarih" id="dtarih" min="2000-01-01" max="2010-12-31"><br><br>
+
+            <label for="sifre">Şifre</label><br>
+            <input type="password" name="sifre" id="sifre" minlength="8" maxlength="8" required ><br><br>
+
+            <label for="avatarsecimi">Avatar Seçimi</label><br>
+            <input type="text" name="avatarsecimi" id="avatarsecimi" list="secim" placeholder="Dory" autocomplete="on"><br><br>
+            <datalist id="secim">
+
+                <option value="Dory">
+                <option value="Nemo">
+                <option value="Muana"> 
+                <option value="Rango">     
+
+            </datalist>
+
+        </fieldset><br>
+        <button type="submit">KAYDET</button>
+        <button type="reset">TEMİZLE</button>
+
+</body>
+</html>

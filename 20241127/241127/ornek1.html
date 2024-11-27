@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Örneği</title>
+</head>
+<body>
+    <h1>Fieldset ve Select Kullanımı</h1>
+
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+
+        <fieldset>
+            <legend>Kişisel Bilgileri</legend>
+        <label for="ad">Ad</label><br>
+        <input type="text" name="ad" id="ad" placeholder="ad"><br><br>
+
+        <label for="soyad">Soy Ad</label><br>
+        <input type="text" name="soyad" id="soyad" placeholder="soyad"><br><br>
+
+        <input type="radio" name="cinsiyet" id="kiz">
+        <label for="kiz">Kız</label>
+
+        <input type="radio" name="cinsiyet" id="erker">
+        <label for="erkek">Erkek</label><br><br>
+
+        <label for="tarih">Doğum Tarihi</label>
+        <input type="date" name="tarih" id="tarih" value="2020-01-01">
+
+        </fieldset>
+
+    <fieldset>
+        <legend>Eğitim Bilgileri</legend>
+        <label for="okul">Okul</label><br>
+        <input type="text" name="okul" id="okul"><br><br>
+
+        <label for="sinif">Sınıf</label><br>
+        <input type="text" name="sinif" id="sinif"><br><br>
+
+        <label for="bolum">Bölümünüz</label><br>
+        <select name="bolum" id="bolum">
+            <option value="1">Bilişim Teknolojileri</option>
+            <option value="2">Çocuk Gelişimi</option>
+            <option value="3">Moda Tasarımı</option>
+            <option value="4">Grafik Tasarımı</option>
+        </select><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Ek Bilgiler</legend>
+        <textarea name="not" id="not" cols="50" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eveniet consequatur ab ratione libero. Beatae aperiam, cupiditate impedit, laborum tempore accusantium vero facere quis exercitationem nulla, molestiae hic. Dignissimos, obcaecati.</textarea><br>
+
+        <input type="checkbox" name="bilgi" id="bilgi">
+        <label for="bilgi">Bilgileri Kabul Et</label><br>
+
+        <input type="checkbox" name="cerez" id="cerez">
+        <label for="cerez">Çerezleri Kabul Et</label><br><br>
+
+        <button type="submit">KAYDET</button>
+        <button type="reset">TEMİZLE</button>
+    </fieldset>
+</body>
+</html>
