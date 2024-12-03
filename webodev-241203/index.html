@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio ve Chackbox</title>
+</head>
+<body>
+
+    <h1>Kampanlayalar</h1>
+
+
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+
+        <fieldset>
+            <legend>Hangi Kitaplarda %50 Kampanya İstersiniz..</legend>
+
+            <label for="kampanya1">Romanlar</label>
+            <input type="radio" name="kampanya" id="kampanya1" value="roman"><br>
+
+            <label for="kampanya2">Hikayeler</label>
+            <input type="radio" name="kampanya" id="kampanya2" value="hikaye"><br>
+
+            <label for="kampanya3">Masallar</label>
+            <input type="radio" name="kampanya" id="kampanya3" value="masal"><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Hangi Kitapları Talep Edersiniz</legend>
+
+            <input type="checkbox" name="urun{}" id="urun1" value="Beyaz Leke">
+            <label for="urun1">Beyaz Leke</label><br>
+
+            <input type="checkbox" name="urun{}" id="urun2" value="Emare">
+            <label for="urun2">Emare</label><br>
+
+            <input type="checkbox" name="urun{}" id="urun3" value="Gökçen">
+            <label for="urun3">Gökçen</label><br>
+
+            <input type="checkbox" name="urun{}" id="urun4" value="Sokak Nöbetçileri">
+            <label for="urun4">Sokak Nöbetçileri</label><br>
+
+            <input type="checkbox" name="urun{}" id="urun5" value="Ömer'in Çocukluğu">
+            <label for="urun5">Ömer'in Çocukluğu</label><br>
+
+            <input type="checkbox" name="urun{}" id="urun6" value="Bambi">
+            <label for="urun6">Bambi</label><br>
+
+            <input type="checkbox" name="urun{}" id="urun7" value="Alladdin'in Sihirli Lanbası">
+            <label for="urun7">Alladdin'in Sihirli Lanbası</label><br>
+
+            <input type="checkbox" name="urun{}" id="urun8" value="Güzel ve Çirkin">
+            <label for="urun8">Güzel ve Çirkin</label><br>
+        </fieldset><br>
+
+        <button type="submit">KAYDET</button>
+        <button type="reset">TEMİZLE</button>
+
+    </form>
+
+    
+    
+</body>
+</html>
